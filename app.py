@@ -19,7 +19,7 @@ st.set_page_config(
 def cargar_bundle():
     return joblib.load("modelo_rf_icam.pkl")
 
-bundle = cargar_bundle()
+bundle = joblib.load("modelo_rf_icam.pkl")
 modelo = bundle["modelo"]
 FEATURES = bundle["features"]
 
