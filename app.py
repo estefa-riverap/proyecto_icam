@@ -20,7 +20,7 @@ def cargar_bundle():
     return joblib.load("modelo_icam.joblibf")
 
 bundle = joblib.load("modelo_icam.joblib")
-modelo = bundle["modelo"]
+modelo = bundle
 FEATURES = bundle["features"]
 
 # Test de humo: verificar contrato modelo ↔ bundle
