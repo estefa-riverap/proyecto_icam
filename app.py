@@ -17,7 +17,7 @@ st.set_page_config(
 # ----------------------------------------------------------------------
 @st.cache_resource
 def cargar_bundle():
-    return joblib.load("modelo_rf_icam.pkl")
+    return joblib.load("modelo_icam.joblib")
 
 bundle = joblib.load("modelo_rf_icam.pkl")
 modelo = bundle["modelo"]
